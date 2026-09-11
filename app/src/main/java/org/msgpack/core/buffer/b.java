@@ -1,0 +1,20 @@
+package org.msgpack.core.buffer;
+
+import java.io.Closeable;
+import java.io.Flushable;
+import java.util.ArrayList;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public final class b implements Closeable, Flushable {
+    public final ArrayList e = new ArrayList();
+    public MessageBuffer y;
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public final void close() {
+    }
+
+    @Override // java.io.Flushable
+    public final void flush() {
+    }
+}

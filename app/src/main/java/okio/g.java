@@ -1,0 +1,28 @@
+package okio;
+
+import java.nio.channels.WritableByteChannel;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public interface g extends f0, WritableByteChannel {
+    g J(i iVar);
+
+    g S(long j);
+
+    f d();
+
+    @Override // okio.f0, java.io.Flushable
+    void flush();
+
+    g v(byte[] bArr, int i);
+
+    g write(byte[] bArr);
+
+    g writeByte(int i);
+
+    g writeInt(int i);
+
+    g writeShort(int i);
+
+    g x(String str);
+}

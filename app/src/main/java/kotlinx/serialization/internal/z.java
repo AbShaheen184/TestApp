@@ -1,0 +1,32 @@
+package kotlinx.serialization.internal;
+
+import java.util.Arrays;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public final class z extends p0 {
+    public int[] a;
+    public int b;
+
+    @Override // kotlinx.serialization.internal.p0
+    public final Object a() {
+        return Arrays.copyOf(this.a, this.b);
+    }
+
+    @Override // kotlinx.serialization.internal.p0
+    public final void b(int i) {
+        int[] iArr = this.a;
+        if (iArr.length < i) {
+            int length = iArr.length * 2;
+            if (i < length) {
+                i = length;
+            }
+            this.a = Arrays.copyOf(iArr, i);
+        }
+    }
+
+    @Override // kotlinx.serialization.internal.p0
+    public final int d() {
+        return this.b;
+    }
+}

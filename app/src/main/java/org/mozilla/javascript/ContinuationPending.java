@@ -1,0 +1,33 @@
+package org.mozilla.javascript;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public class ContinuationPending extends RuntimeException {
+    private static final long serialVersionUID = 4956008116771118856L;
+    private Object applicationState;
+    private NativeContinuation continuationState;
+
+    public ContinuationPending(NativeContinuation nativeContinuation) {
+        this.continuationState = nativeContinuation;
+    }
+
+    public Object getApplicationState() {
+        return this.applicationState;
+    }
+
+    public Object getContinuation() {
+        return this.continuationState;
+    }
+
+    public NativeContinuation getContinuationState() {
+        return this.continuationState;
+    }
+
+    public void setApplicationState(Object obj) {
+        this.applicationState = obj;
+    }
+
+    public void setContinuation(NativeContinuation nativeContinuation) {
+        this.continuationState = nativeContinuation;
+    }
+}

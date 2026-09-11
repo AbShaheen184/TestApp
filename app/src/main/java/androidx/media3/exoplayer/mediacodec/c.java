@@ -1,0 +1,13 @@
+package androidx.media3.exoplayer.mediacodec;
+
+import android.media.MediaCodec;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public final class c {
+    public int a;
+    public int b;
+    public final MediaCodec.CryptoInfo c = new MediaCodec.CryptoInfo();
+    public long d;
+    public int e;
+}

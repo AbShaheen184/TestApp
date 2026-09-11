@@ -1,0 +1,34 @@
+package androidx.compose.foundation.contextmenu;
+
+import kotlin.y;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class k implements kotlin.jvm.functions.a {
+    public final /* synthetic */ int e;
+    public final /* synthetic */ boolean y;
+    public final /* synthetic */ kotlin.jvm.functions.a z;
+
+    public /* synthetic */ k(boolean z, kotlin.jvm.functions.a aVar, int i) {
+        this.e = i;
+        this.y = z;
+        this.z = aVar;
+    }
+
+    @Override // kotlin.jvm.functions.a
+    public final Object invoke() {
+        switch (this.e) {
+            case 0:
+                if (this.y) {
+                    this.z.invoke();
+                }
+                break;
+            default:
+                if (!this.y) {
+                    this.z.invoke();
+                }
+                break;
+        }
+        return y.a;
+    }
+}

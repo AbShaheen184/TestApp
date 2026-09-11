@@ -1,0 +1,16 @@
+package androidx.appcompat.widget;
+
+import android.transition.Transition;
+import android.widget.PopupWindow;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class o1 {
+    public static void a(PopupWindow popupWindow, Transition transition) {
+        popupWindow.setEnterTransition(transition);
+    }
+
+    public static void b(PopupWindow popupWindow, Transition transition) {
+        popupWindow.setExitTransition(transition);
+    }
+}

@@ -1,0 +1,48 @@
+package kotlinx.coroutines.flow;
+
+import kotlin.coroutines.jvm.internal.e;
+import org.mozilla.javascript.Token;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+@e(c = "kotlinx.coroutines.flow.FlowKt__LimitKt$dropWhile$1$1", f = "Limit.kt", l = {Token.GETPROPNOWARN, 35, Token.SETPROP}, m = "emit")
+public final class FlowKt__LimitKt$dropWhile$1$1$emit$1 extends kotlin.coroutines.jvm.internal.c {
+    Object L$0;
+    Object L$1;
+    int label;
+    /* synthetic */ Object result;
+    final /* synthetic */ FlowKt__LimitKt$dropWhile$1$1<T> this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    public FlowKt__LimitKt$dropWhile$1$1$emit$1(FlowKt__LimitKt$dropWhile$1$1<? super T> flowKt__LimitKt$dropWhile$1$1, kotlin.coroutines.d<? super FlowKt__LimitKt$dropWhile$1$1$emit$1> dVar) {
+        super(dVar);
+        this.this$0 = flowKt__LimitKt$dropWhile$1$1;
+    }
+
+    /* JADX WARN: Type inference incomplete: some casts might be missing */
+    /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
+        jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type kotlin.coroutines.d to kotlinx.coroutines.flow.FlowKt__LimitKt$dropWhile$1$1$emit$1 for r1v1 'this'  kotlin.coroutines.d
+        	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+        	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+        	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+        	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+        	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+        */
+    @Override // kotlin.coroutines.jvm.internal.a
+    public final java.lang.Object invokeSuspend(java.lang.Object r2) {
+        /*
+            r1 = this;
+            r1.result = r2
+            int r2 = r1.label
+            r0 = -2147483648(0xffffffff80000000, float:-0.0)
+            r2 = r2 | r0
+            r1.label = r2
+            kotlinx.coroutines.flow.FlowKt__LimitKt$dropWhile$1$1<T> r2 = r1.this$0
+            r0 = 0
+            java.lang.Object r2 = r2.emit(r0, r1)
+            return r2
+        */
+        throw new UnsupportedOperationException("Method not decompiled: kotlinx.coroutines.flow.FlowKt__LimitKt$dropWhile$1$1$emit$1.invokeSuspend(java.lang.Object):java.lang.Object");
+    }
+}

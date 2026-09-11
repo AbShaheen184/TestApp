@@ -1,0 +1,28 @@
+package kotlinx.coroutines;
+
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public final class ExecutorsKt {
+    public static final Executor asExecutor(CoroutineDispatcher coroutineDispatcher) {
+        Executor executor;
+        ExecutorCoroutineDispatcher executorCoroutineDispatcher = coroutineDispatcher instanceof ExecutorCoroutineDispatcher ? (ExecutorCoroutineDispatcher) coroutineDispatcher : null;
+        return (executorCoroutineDispatcher == null || (executor = executorCoroutineDispatcher.getExecutor()) == null) ? new DispatcherExecutor(coroutineDispatcher) : executor;
+    }
+
+    public static final CoroutineDispatcher from(Executor executor) {
+        CoroutineDispatcher coroutineDispatcher;
+        DispatcherExecutor dispatcherExecutor = executor instanceof DispatcherExecutor ? (DispatcherExecutor) executor : null;
+        return (dispatcherExecutor == null || (coroutineDispatcher = dispatcherExecutor.dispatcher) == null) ? new ExecutorCoroutineDispatcherImpl(executor) : coroutineDispatcher;
+    }
+
+    @ExperimentalCoroutinesApi
+    public static /* synthetic */ void CloseableCoroutineDispatcher$annotations() {
+    }
+
+    public static final ExecutorCoroutineDispatcher from(ExecutorService executorService) {
+        return new ExecutorCoroutineDispatcherImpl(executorService);
+    }
+}

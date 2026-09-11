@@ -1,0 +1,21 @@
+package androidx.media3.common;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public final class z {
+    public static final z a = new z();
+
+    static {
+        androidx.media3.common.util.j0.K(0);
+        androidx.media3.common.util.j0.K(1);
+        androidx.media3.common.util.j0.K(2);
+    }
+
+    public final boolean equals(Object obj) {
+        return this == obj || (obj instanceof z);
+    }
+
+    public final int hashCode() {
+        return 0;
+    }
+}

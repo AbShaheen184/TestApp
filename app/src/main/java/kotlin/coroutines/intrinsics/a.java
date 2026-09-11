@@ -1,0 +1,30 @@
+package kotlin.coroutines.intrinsics;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public final class a {
+    public static final /* synthetic */ a[] A;
+    public static final a e;
+    public static final a y;
+    public static final a z;
+
+    static {
+        a aVar = new a("COROUTINE_SUSPENDED", 0);
+        e = aVar;
+        a aVar2 = new a("UNDECIDED", 1);
+        y = aVar2;
+        a aVar3 = new a("RESUMED", 2);
+        z = aVar3;
+        A = new a[]{aVar, aVar2, aVar3};
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) A.clone();
+    }
+}

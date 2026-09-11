@@ -1,0 +1,12 @@
+package coil3.util;
+
+/* JADX INFO: compiled from: r8-map-id-b723831e8a75f5c253aef5210d8563f5ef31d2a2db903326935496738229b331 */
+/* JADX INFO: loaded from: classes.dex */
+public final class k implements kotlin.jvm.functions.l {
+    public static final k e = new k();
+
+    @Override // kotlin.jvm.functions.l
+    public final /* bridge */ /* synthetic */ Object invoke(Object obj) {
+        return null;
+    }
+}
